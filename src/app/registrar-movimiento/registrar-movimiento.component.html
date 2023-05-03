@@ -1,0 +1,32 @@
+<div class="col-md-6 offset-md-3">
+    <h2 class="text-center" style="margin: 10%; color: rgb(238, 197, 14);">REGISTRAR MOVIMIENTO</h2>
+    <form (ngSubmit)="onSubmit()" style="margin-top: -8%;">
+        <div class="mb-3">
+            <label class="form-label">Fecha</label>
+            <input type="text" class="form-control" id="fecha" [(ngModel)]="movimiento.fecha" name="fecha">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Numero Cuenta</label>
+            <input type="number" class="form-control" id="numeroCuenta" [(ngModel)]="movimiento.numeroCuenta" name="numeroCuenta">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tipo Cuenta</label>
+            <input type="text" class="form-control" id="tipoCuenta" [(ngModel)]="movimiento.tipoCuenta" name="tipoCuenta">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Saldo Inicial</label>
+            <input type="number" class="form-control" id="saldoInicial" [(ngModel)]="movimiento.saldoInicial" name="saldoInicial">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Estado</label>
+            <input type="text" class="form-control" id="estado" [(ngModel)]="movimiento.estado" name="estado">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Movimiento</label>
+            <input type="number" class="form-control" id="movimiento" [(ngModel)]="movimiento.movimiento" name="movimiento">
+        </div>
+        <button type="submit" class="btn btn-success" style="margin: 3%;">Guardar</button>
+        <button type="submit" class="btn btn-danger" style="margin: 3%;" routerLink="/movimientos" routerLinkActive="active">Cancelar</button>
+    </form>
+
+</div>

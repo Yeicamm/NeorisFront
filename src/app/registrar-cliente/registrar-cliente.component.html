@@ -1,0 +1,29 @@
+<div class="col-md-6 offset-md-3">
+    <h2 class="text-center" style="margin: 10%; color: rgb(238, 197, 14);">REGISTRAR CLIENTE</h2>
+    <form (ngSubmit)="onSubmit()" style="margin-top: -8%;">
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="cliente.nombre" name="nombre">
+            <div class="form-text">Nombre Completo</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Direccion</label>
+            <input type="text" class="form-control" id="direccion" [(ngModel)]="cliente.direccion" name="direccion">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="telefono" [(ngModel)]="cliente.telefono" name="telefono">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Contraseña</label>
+            <input type="text" class="form-control" id="contrasena" [(ngModel)]="cliente.contrasena" name="contrasena">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Estado</label>
+            <input type="text" class="form-control" id="estado" [(ngModel)]="cliente.estado" name="estado">
+        </div>
+        <button type="submit" class="btn btn-success" style="margin: 3%;">Guardar</button>
+        <button type="submit" class="btn btn-danger" style="margin: 3%;" routerLink="/clientes"
+            routerLinkActive="active">Cancelar</button>
+    </form>
+</div>

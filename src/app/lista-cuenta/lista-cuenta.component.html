@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="container mt-5">
+        <div>
+            <h1 style="margin-top: 3%; font-family: Times New Roman;">Cuentas</h1><br>
+            <button type="button" class="btn btn-warning" routerLink="/registrar-cuenta" routerLinkActive="active" style="float: right; margin-bottom: 20px;">Crear Nuevo</button>
+            
+        </div>
+        <table class="table table-striped table-striped" style="margin-top: 3%;">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>NumeroCuenta</th>
+                    <th>Tipo</th>
+                    <th>SaldoInicial</th>
+                    <th>Estado</th>
+                    <th>Nombre</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cuenta of cuentas">
+                    <td>{{cuenta.id}}</td>
+                    <td>{{cuenta.numeroCuenta}}</td>
+                    <td>{{cuenta.tipo}}</td>
+                    <td>{{cuenta.saldoInicial}}</td>
+                    <td>{{cuenta.estado}}</td>
+                    <td>{{cuenta.nombre}}</td>
+                    <td>
+                        <button (click)= "actualizarCuenta(cuenta.id)" class="btn btn-warning" style="margin-left : 10px;">Editar</button>
+                        <button (click)= "eliminarCuenta(cuenta.id)" class="btn btn-danger" style="margin-left : 10px;">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+
+</body>
+
+</html>
+

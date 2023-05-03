@@ -1,0 +1,28 @@
+<div class="col-md-6 offset-md-3">
+    <h2 class="text-center" style="margin: 10%; color: rgb(238, 197, 14);">REGISTRAR CUENTA</h2>
+    <form (ngSubmit)="onSubmit()" style="margin-top: -8%;">
+        <div class="mb-3">
+            <label class="form-label">Numero Cuenta</label>
+            <input type="number" class="form-control" id="numeroCuenta" [(ngModel)]="cuenta.numeroCuenta" name="numeroCuenta">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tipo</label>
+            <input type="text" class="form-control" id="tipo" [(ngModel)]="cuenta.tipo" name="tipo">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Saldo Inicial</label>
+            <input type="number" class="form-control" id="saldoInicial" [(ngModel)]="cuenta.saldoInicial" name="saldoInicial">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Estado</label>
+            <input type="text" class="form-control" id="estado" [(ngModel)]="cuenta.estado" name="estado">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="cuenta.nombre" name="nombre">
+        </div>
+        <button type="submit" class="btn btn-success" style="margin: 3%;">Guardar</button>
+        <button type="submit" class="btn btn-danger" style="margin: 3%;" routerLink="/cuentas" routerLinkActive="active">Cancelar</button>
+    </form>
+
+</div>

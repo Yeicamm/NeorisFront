@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<nav class="navbar" style="z-index: 100; border-bottom: 3px solid rgb(204, 204, 204);">
+    <div class="container-fluid">
+        <img src="https://www.mouseinteractivo.com/wp-content/uploads/portada.jpg" alt="Logo"
+            style="width: 200px; max-height: 150px;" class="d-inline-block align-text-top">
+    </div>
+</nav>
+<div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; font-family: Times New Roman; background-color: rgb(255, 255, 255); position: fixed; top: -25px; margin-top: 70px; z-index: 50; ">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <svg class="bi pe-none me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+        </svg>
+    </a>
+    <hr>
+    <ul class="list-group " style="margin-right: -30%; border-right: 3px solid rgb(204, 204, 204); margin-left: -8%;">
+        <li class="list-group-item" routerLink="clientes" routerLinkActive="active" style="height: 80px; display: flex; align-items: center; text-align: left; border-bottom: 2px solid rgb(204, 204, 204);" >Clientes</li>
+        <li class="list-group-item" routerLink="cuentas" routerLinkActive="active" style="height: 80px; display: flex; align-items: center; text-align: left; border-bottom: 2px solid rgb(204, 204, 204);">Cuentas</li>
+        <li class="list-group-item" routerLink="movimientos" routerLinkActive="active" style="height: 80px; display: flex; align-items: center; text-align: left; border-bottom: 2px solid rgb(204, 204, 204);">Movimientos</li>
+        <li class="list-group-item" style="height: 80px; display: flex; align-items: center; text-align: left; border-bottom: 2px solid rgb(204, 204, 204);">Reportes</li>
+        <li class="list-group-item" style="height: 800px;"></li>
+      </ul>
+</div>
+<router-outlet></router-outlet>
